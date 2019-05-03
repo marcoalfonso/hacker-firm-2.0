@@ -38,8 +38,16 @@ class Layout extends React.Component {
         return (
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
                 <Head>
-                    <title>Next.js Starter</title>
-                    <meta name="description" content="Next.js Starter - Forty" />
+                    <title>The Hacker Firm | Software Development Studio Sydney</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta name="description" content="The Hacker Firm is a software studio specialized in web, blockchain and VR development." />
+                    <meta name="author" content="The Hacker Firm" />
+                    <meta name="keywords" content="Software development, Web Development, Blockchain, VR" />
+                    <meta property='og:title' content="The Hacker Firm" />
+                    <meta property='og:url' content="https://www.hackerfirm.com" />
+                    <meta property='og:image' content="https://www.hackerfirm.com/assets/images/logo.svg" />
+                    <meta property='og:description' content="The Hacker Firm is a software studio specialized in web, blockchain and VR development." />
+                    <meta name="google-site-verification" content="sQCxfB6UNPGPFnhyxUFHeQnx0zeqQXd-9jYmkS0YCzI" />
                     <link href="/static/css/skel.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
