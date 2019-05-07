@@ -7,10 +7,11 @@ const Footer = (props) => (
                 <li><a href="#" className="icon alt fa-instagram"><span className="label">Instagram</span></a></li>
                 <li><a href="#" className="icon alt fa-github"><span className="label">GitHub</span></a></li>*/}
                 <li><a href="https://www.linkedin.com/company/the-hacker-firm/" className="icon alt fa-linkedin"><span className="label">LinkedIn</span></a></li>
-            </ul>
-            <ul className="copyright">
                 <li>&copy; Hacker Firm</li>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/terms-of-use">Terms of use</a></li>
             </ul>
+
         </div>
     </footer>
 )
