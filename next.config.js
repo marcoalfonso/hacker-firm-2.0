@@ -28,6 +28,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader?name=[path][name].[ext]?[hash]'
       }
     )
     return config
