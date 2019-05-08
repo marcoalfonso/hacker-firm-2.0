@@ -3,9 +3,14 @@ import Link from 'next/link'
 
 const Header = (props) => (
   <header id="header" className="alt">
-    {/*<Link href="/">
-        <a className="logo"><strong>Hacker Firm</strong> <span>by HTML5 UP</span></a>
-    </Link>*/}
+    { props.router.pathname !== '/' &&
+      <Link href="/">
+        <div className="logo">
+          <img src="static/images/logo.svg" width="54px" height="54px" alt="Hacker Firm" />
+          <span>Hacker Firm</span>
+        </div>
+      </Link>
+    }
     <nav>
       <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">Menu</a>
     </nav>

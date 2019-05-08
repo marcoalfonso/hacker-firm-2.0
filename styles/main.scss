@@ -191,6 +191,10 @@
   max-height: 50px;
 }
 
+.clients a {
+  border: none;
+}
+
 @media only screen and (min-width: 768px) {
   .clients li {
     width: 25%;

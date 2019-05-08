@@ -10,30 +10,46 @@ const Clients = (props) => (
           <br />We strive to work with the same care to the <b>satisfaction of each customer</b></p>
           <ul>
             <li>
-              <img src="static/images/clients/deloitte.svg" alt="Deloitte" />
+              <a href="https://www.deloittedigital.com.au/" target="_blank">
+                <img src="static/images/clients/deloitte.svg" alt="Deloitte" />
+              </a>
             </li>
             <li>
-              <img src="static/images/clients/qantas.svg" alt="Qantas" />
+              <a href="https://www.qantas.com.au/" target="_blank">
+                <img src="static/images/clients/qantas.svg" alt="Qantas" />
+              </a>
             </li>
             <li>
-              <img src="static/images/clients/fairfax.svg" alt="Fairfax Media" />
+              <a href="https://www.domain.com.au/" target="_blank">
+                <img src="static/images/clients/fairfax.svg" alt="Domain" />
+              </a>
             </li>
             <li>
-              <img src="static/images/clients/akqa.svg" alt="AKQA" />
+              <a href="https://www.ing.com.au/" target="_blank">
+                <img src="static/images/clients/ing.svg" alt="ING" />
+              </a>
             </li>
           </ul>
           <ul>
             <li>
-              <img src="static/images/clients/ing.svg" alt="ING" />
+              <a href="https://www.akqa.com/" target="_blank">
+                <img src="static/images/clients/akqa.svg" alt="AKQA" />
+              </a>
             </li>
             <li>
-              <img src="static/images/clients/servicensw.png" alt="Service NSW" />
+              <a href="https://www.service.nsw.gov.au/" target="_blank">
+                <img src="static/images/clients/servicensw.png" alt="Service NSW" />
+              </a>
             </li>
             <li>
-              <img src="static/images/clients/dta.svg" alt="DTA" />
+              <a href="https://www.dta.gov.au/" target="_blank">
+                <img src="static/images/clients/dta.svg" alt="DTA" />
+              </a>
             </li>
             <li>
-              <img src="static/images/clients/lawpath.svg" alt="Lawpath" />
+              <a href="https://www.lawpath.com.au/" target="_blank">
+                <img src="static/images/clients/lawpath.svg" alt="Lawpath" />
+              </a>
             </li>
           </ul>
         </div>
