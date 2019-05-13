@@ -22,7 +22,7 @@ const Services = (props) => (
                 <p>We develop VR experiences and prototypes using Unity.</p>
             </div>
         </div>
-        <p className="services__btn"><a className="btn local-scroll" href="#contact">Contact us</a></p>
+        <p className="services__btn"><a className="button" href="#contact">Contact us</a></p>
     </div>
   </section>
 )
