@@ -184,6 +184,49 @@
   border: none;
 }
 
+.founders {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.founder {
+  display: flex;
+  align-items: center;
+}
+
+.founder img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.founders .info {
+  margin-left: 30px;
+}
+
+#our-founders {
+  border-bottom: solid 1px rgba(212,212,255,0.1);
+}
+
+#our-founders .info h3 {
+  color: #1f7edd;
+  margin-bottom: 5px;
+}
+
+#our-founders h5 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+}
+
+#our-founders .underline {
+  display: inline-block;
+  padding-bottom: 4.5px;
+  border-bottom: 3px solid #ffffff;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 768px) {
   .clients li {
     width: 25%;
