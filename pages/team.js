@@ -22,15 +22,16 @@ export default () => (
     							<h3>Marco Lavielle</h3>
     							<h5>Full Stack Engineer</h5>
     						</div>
+                <a href="https://www.linkedin.com/in/marcolavielle/" className="info icon alt fa-linkedin"><span className="label">LinkedIn</span></a>
     					</div>
-    					<ol class="padding-xs list-unstyled">
+    					{/*<ol class="padding-xs list-unstyled">
     					</ol>
     					<h5 class="underline">Profile</h5>
     					<p class="padding-xs">Coding addict, painter and runner.</p>
     					<ul class="list-inline social">
     						<li>
     						</li>
-    					</ul>
+    					</ul>*/}
     				</div>
     				<div class="col-xs-12 col-md-6">
     					<div class="founder">
@@ -41,15 +42,16 @@ export default () => (
     							<h3>Armin Kuhestani</h3>
     							<h5>Front End Engineer</h5>
     						</div>
+                <a href="https://au.linkedin.com/in/kuhestani/en" className="info icon alt fa-linkedin"><span className="label">LinkedIn</span></a>
     					</div>
-    					<ol class="padding-xs list-unstyled">
+    					{/*<ol class="padding-xs list-unstyled">
     					</ol>
     					<h5 class="underline">Profile</h5>
     					<p class="padding-xs">Avid fan of mobile phones and mobile apps.</p>
     					<ul class="list-inline social">
     						<li>
     						</li>
-    					</ul>
+    					</ul>*/}
     				</div>
     			</div>
     			<div class="row founders">
@@ -62,15 +64,16 @@ export default () => (
     							<h3>Franc Santos</h3>
     							<h5>Back End Engineer</h5>
     						</div>
+                <a href="https://au.linkedin.com/in/franc-santos" className="info icon alt fa-linkedin"><span className="label">LinkedIn</span></a>
     					</div>
-    					<ol class="padding-xs list-unstyled">
+    					{/*<ol class="padding-xs list-unstyled">
     					</ol>
     					<h5 class="underline">Profile</h5>
     					<p class="padding-xs">A polyglot software engineer that enjoys all things tech.</p>
     					<ul class="list-inline social">
     						<li>
     						</li>
-    					</ul>
+    					</ul>*/}
     				</div>
     				<div class="col-xs-12 col-md-6">
     					<div class="founder">
@@ -81,15 +84,16 @@ export default () => (
     							<h3>Alida Maffon</h3>
     							<h5>Javascript Engineer</h5>
     						</div>
+                <a href="https://uk.linkedin.com/in/alida-maffon-729b6912" className="info icon alt fa-linkedin"><span className="label">LinkedIn</span></a>
     					</div>
-    					<ol class="padding-xs list-unstyled">
+    					{/*<ol class="padding-xs list-unstyled">
     					</ol>
     					<h5 class="underline">Profile</h5>
     					<p class="padding-xs">A fanatic of Javascript in whatever device.</p>
     					<ul class="list-inline social">
     						<li>
     						</li>
-    					</ul>
+    					</ul>*/}
     				</div>
     			</div>
         </div>
