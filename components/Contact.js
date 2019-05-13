@@ -1,11 +1,6 @@
 import { Component } from 'react'
 import 'isomorphic-fetch'
 
-// import {
-//   Form,
-//   Input
-// } from 'components/forms/index'
-
 class Contact extends Component {
   constructor (props) {
     super(props)
@@ -59,6 +54,9 @@ class Contact extends Component {
                           <li><input type="submit" value="Send Message" className="special" /></li>
                           <li><input type="reset" value="Clear" /></li>
                       </ul>
+                      {this.state.submitted === true &&
+                        <div className="message-sent">Message Sent</div>
+                      }
                   </form>
               </section>
               <section className="split">
