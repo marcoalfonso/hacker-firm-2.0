@@ -27,6 +27,7 @@
     "raw-loader": "^0.5.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-ga": "^2.5.7",
     "react-particles-js": "^2.6.0",
     "sass-loader": "^7.1.0"
   }

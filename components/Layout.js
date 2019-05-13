@@ -5,37 +5,39 @@ import Header from './Header'
 import Menu from './Menu'
 import Contact from './Contact'
 import Footer from './Footer'
+import ReactGA from 'react-ga'
 
 class Layout extends React.Component {
   constructor(props) {
-      super(props)
-      this.state = {
-          isMenuVisible: false,
-          loading: 'is-loading'
-      }
-      this.handleToggleMenu = this.handleToggleMenu.bind(this)
+    super(props)
+    this.state = {
+      isMenuVisible: false,
+      loading: 'is-loading'
+    }
+    this.handleToggleMenu = this.handleToggleMenu.bind(this)
   }
 
   componentDidMount() {
-      this.timeoutId = setTimeout(() => {
-          this.setState({ loading: '' });
-      }, 100);
+    ReactGA.initialize('UA-77335111-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' });
+    }, 100);
   }
 
   componentWillUnmount() {
-      if (this.timeoutId) {
-          clearTimeout(this.timeoutId);
-      }
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
   }
 
   handleToggleMenu() {
-      this.setState({
-          isMenuVisible: !this.state.isMenuVisible
-      })
+    this.setState({
+      isMenuVisible: !this.state.isMenuVisible
+    })
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
         <Head>
