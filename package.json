@@ -4,9 +4,9 @@
   "description": "Hacker Firm consultancy website",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "NODE_ENV=production node server.js",
     "build": "next build",
-    "start": "node server.js -p $PORT",
+    "start": "next start -p PORT",
     "export": "next build && next export"
   },
   "keywords": [],
