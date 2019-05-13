@@ -10,10 +10,7 @@ class Contact extends Component {
     }
   }
 
-  submitForm (name, email, message) {
-    console.log("name", name)
-    console.log("email", email)
-    console.log("message", message)
+  submitForm(name, email, message) {
     fetch('/api/contact', {
       method: 'post',
       headers: {
@@ -24,6 +21,10 @@ class Contact extends Component {
     }).then((res) => {
       res.status === 200 ? this.setState({ submitted: true }) : ''
     })
+  }
+
+  clearForm() {
+    this.setState({ submitted: false })
   }
 
   render () {
@@ -52,7 +53,7 @@ class Contact extends Component {
                       </div>
                       <ul className="actions">
                           <li><input type="submit" value="Send Message" className="special" /></li>
-                          <li><input type="reset" value="Clear" /></li>
+                          <li><input type="reset" value="Clear" onClick={e => {this.clearForm()}}/></li>
                       </ul>
                       {this.state.submitted === true &&
                         <div className="message-sent">Message Sent</div>
@@ -91,57 +92,3 @@ class Contact extends Component {
 }
 
 export default Contact
-
-{/*const Contact = (props) => (
-    <section id="contact">
-        <div className="inner">
-            <section>
-                <form method="post" action="#">
-                    <div className="field half first">
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="name" id="name" />
-                    </div>
-                    <div className="field half">
-                        <label htmlFor="email">Email</label>
-                        <input type="text" name="email" id="email" />
-                    </div>
-                    <div className="field">
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message" id="message" rows="6"></textarea>
-                    </div>
-                    <ul className="actions">
-                        <li><input type="submit" value="Send Message" className="special" /></li>
-                        <li><input type="reset" value="Clear" /></li>
-                    </ul>
-                </form>
-            </section>
-            <section className="split">
-                <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-envelope"></span>
-                        <h3>Email</h3>
-                        <a href="#">hello@hackerfirm.com</a>
-                    </div>
-                </section>
-                <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-phone"></span>
-                        <h3>Phone</h3>
-                        <span>(+61) 0423478156</span>
-                    </div>
-                </section>
-                <section>
-                    <div className="contact-method">
-                        <span className="icon alt fa-home"></span>
-                        <h3>Address</h3>
-                        <span>362 Clovelly Road<br />
-                        Sydney, 2031<br />
-                        Australia</span>
-                    </div>
-                </section>
-            </section>
-        </div>
-    </section>
-)
-
-export default Contact*/}

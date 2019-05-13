@@ -184,14 +184,11 @@
   border: none;
 }
 
-.founders {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .founder {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .founder img {
@@ -234,6 +231,16 @@
 @media only screen and (min-width: 768px) {
   .clients li {
     width: 25%;
+  }
+
+  .founders {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .founder {
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
