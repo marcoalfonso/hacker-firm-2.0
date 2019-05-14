@@ -65,14 +65,14 @@ class Contact extends Component {
                       <div className="contact-method">
                           <span className="icon alt fa-envelope"></span>
                           <h3>Email</h3>
-                          <a href="#">hello@hackerfirm.com</a>
+                          <a href="mailto:hello@hackerfirm.com">hello@hackerfirm.com</a>
                       </div>
                   </section>
                   <section>
                       <div className="contact-method">
                           <span className="icon alt fa-phone"></span>
                           <h3>Phone</h3>
-                          <span>(+61) 0423478156</span>
+                          <a href="tel:0423478156">(+61) 0423478156</a>
                       </div>
                   </section>
                   <section>
