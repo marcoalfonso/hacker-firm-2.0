@@ -6,8 +6,8 @@ const Clients = (props) => (
       <div className="row">
         <div className="col-lg-12">
           <h1>They trust us<small> And we thank them</small></h1>
-          <p>We work with <b>all forms of public or private organizations</b> and are able to provide tailored responses to key <b>accounts</b> as well as <b>local small businesses.</b>
-          <br />We strive to work with the same care to the <b>satisfaction of each customer</b></p>
+          <p>We work with <b>all forms of public or private organizations</b> and are able to provide complex software development to key <b>accounts</b> as well as <b>startups.</b>
+          <br/>We have worked with some of the biggest brands in Sydney and in <b>large scale projects:</b></p>
           <ul>
             <li>
               <a href="https://www.deloittedigital.com.au/" target="_blank">

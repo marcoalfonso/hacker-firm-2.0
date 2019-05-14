@@ -40,7 +40,7 @@ export default () => (
           <div className="subheadline-particles">Software development</div>
         </div>
         <a className="splash__next local-scroll" href="#services">
-          <i className="fa fa-angle-down"></i>
+          <i className="fa fa-angle-down bounce"></i>
         </a>
       </div>
       <Services />
@@ -50,7 +50,7 @@ export default () => (
             <header className="major">
               <h2>How It Works</h2>
             </header>
-            <p>From your idea to a finished product. Our specialised team of developers and designers are here to help you bring to life your projects.</p>
+            <p>From your idea to a finished product. Our specialised team of developers are here to help you bring to life your projects.</p>
             <ul className="actions">
               <li><Link href="#contact"><a className="button next">Get Started</a></Link></li>
             </ul>
