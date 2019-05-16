@@ -5,30 +5,23 @@ import Header from './Header'
 import Menu from './Menu'
 import Contact from './Contact'
 import Footer from './Footer'
-import ReactGA from 'react-ga'
+import { initGA, logPageView } from './utils/analytics'
 
 class Layout extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isMenuVisible: false,
-      loading: 'is-loading'
+      isMenuVisible: false
     }
     this.handleToggleMenu = this.handleToggleMenu.bind(this)
   }
 
   componentDidMount() {
-    ReactGA.initialize('UA-77335111-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' });
-    }, 100);
-  }
-
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
     }
+    logPageView()
   }
 
   handleToggleMenu() {
@@ -39,7 +32,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
+      <div className={`body ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
         <Head>
           <title>The Hacker Firm | Software Development Studio Sydney</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
